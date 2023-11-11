@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 1000px;
+    height: 400px;
+    background: #fff;
+    margin: 120px auto;
+    display: flex;
+}
+
+.card{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    transition: 0.6s ease;
+}
+
+.card:nth-child(1){
+    background-color: lightblue;
+}
+.card:nth-child(2){
+    background-color: lightpink;
+}
+.card:nth-child(3){
+    background-color: lightsalmon;
+}
+
+.card h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.info {
+    max-width: 230px;
+    font-size: 12px;
+    margin: 28px 0;
+    display: none;
+    animation: 0.6s;
+   
+}
+
+.info button{
+    border: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.card img{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.card:hover{
+    flex-grow: 2.5;
+}
+
+.card:hover .info{
+    display: block;
+}
+
+.card:hover h2{
+    text-align: left;
+}
